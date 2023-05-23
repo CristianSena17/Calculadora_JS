@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculadora em JS</title>
+		<link type="text/css" rel="stylesheet" href="estilo.css" />
+		<Script src="JavaScript.js"></script>
+		<link rel="icon" href="icone.png" type="image/png">
+	</head>
+	<body>
+		<div class="CalculadoraDiv">
+			<form name="calculadora">
+				<table>
+					<tr>
+						<td colspan="10"><input type="text" name="visor" id="visor" value="0" readonly/></td>
+					</tr>
+					<tr>
+						<td colspan="5">
+		 					<input type="radio" name="valor" value="Graus" > Graus
+			  				<input type="radio" name="valor" value="Radianos" checked > Radianos
+			 				<input type="radio" name="valor" value="Grados" > Grados
+						</td>
+						<td><input type="button" value="MC" onclick="MC()"/></td>
+						<td><input type="button" value="MR" onclick="MR()"/></td>
+						<td><input type="button" value="MS" onclick="MS()"/></td>
+						<td><input type="button" value="M+" onclick="MMais()"/></td>
+						<td><input type="button" value="M-" onclick="MMenos()"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" value=" "/></td>
+						<td><input type="button" value="Inv" onclick="Inv()"/></td>
+						<td><input type="button" value="ln" onclick="ln()"/></td>
+						<td><input type="button" value="("/></td>
+						<td><input type="button" value=")"/></td>
+						<td><input type="button" value="&larr;" onclick="Apagar()"/></td>
+						<td><input type="button" value="CE" onclick="CE()"/></td>
+						<td><input type="button" value="C" onclick="C()"/></td>
+						<td><input type="button" value="&plusmn;" onclick="MaisMenos()"/></td>
+						<td><input type="button" value="&radic;" onclick="Raiz()"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="Int" onclick="Int()"/></td>
+						<td><input type="button" value="sinh" onclick="sinh()"/></td>
+						<td><input type="button" value="sin" onclick="sin()"/></td>
+						<td><input type="button" value="X^2" onclick="XElevado2()"/></td>
+						<td><input type="button" value="N!" onclick="NFatorial()"/></td>
+						<td><input type="button" value="7" class="Cor" onclick="N(7)"/></td>
+						<td><input type="button" value="8" class="Cor" onclick="N(8)"/></td>
+						<td><input type="button" value="9" class="Cor" onclick="N(9)"/></td>
+						<td><input type="button" value="/" onclick="Divisao()"/></td>
+						<td><input type="button" value="%" onclick="Porc()"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="dms" onclick="dms()"/></td>
+						<td><input type="button" value="cosh" onclick="cosh()"/></td>
+						<td><input type="button" value="cos" onclick="cos()"/></td>
+						<td><input type="button" value="X^Y" onclick="XElevadoY()"/></td>
+						<td><input type="button" value="Y&radic;X" onclick="YRaizX()"/></td>
+						<td><input type="button" value="4" class="Cor" onclick="N(4)"/></td>
+						<td><input type="button" value="5" class="Cor" onclick="N(5)"/></td>
+						<td><input type="button" value="6" class="Cor" onclick="N(6)"/></td>
+						<td><input type="button" value="*" onclick="Multiplicacao()"/></td>
+						<td><input type="button" value="1/X" onclick="UmBarraX()"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="&Pi;" onclick="Pi()"/></td>
+						<td><input type="button" value="tanh" onclick="tanh()"/></td>
+						<td><input type="button" value="tan" onclick="tan()"/></td>
+						<td><input type="button" value="X^3" onclick="XElevado3()"/></td>
+						<td><input type="button" value="3&radic;X" onclick="TresRaizX()"/></td>
+						<td><input type="button" value="1" class="Cor" onclick="N(1)"/></td>
+						<td><input type="button" value="2" class="Cor" onclick="N(2)"/></td>
+						<td><input type="button" value="3" class="Cor" onclick="N(3)"/></td>
+						<td><input type="button" value="-" onclick="Menos()"/></td>
+						<td rowspan="2"><input type="button" class="Igual" value="=" onclick="Igual()"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="F-E" onclick="FMenosE()"/></td>
+						<td><input type="button" value="Exp" onclick="Exp()"/></td>
+						<td><input type="button" value="Mod" onclick="Mod()"/></td>
+						<td><input type="button" value="log" onclick="log()"/></td>
+						<td><input type="button" value="10^X" onclick="DezX()"/></td>
+						<td colspan="2"><input type="button" class="Cor" value="0" onclick="N(0)"/></td>
+						<td><input type="button" value="," class="Cor" onclick="Virgula()"/></td>
+						<td><input type="button" value="+" onclick="Mais()"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
