@@ -1,2 +1,2 @@
 # Calculadora_JS
-Calculadora científica desenvolvida de JavaScript em 2017
+Calculadora científica desenvolvida em JavaScript em 2017
